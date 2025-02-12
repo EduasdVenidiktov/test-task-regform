@@ -1,0 +1,45 @@
+.timerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.timerUnitContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timerUnit {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+.timerUnit:last-child {
+  color: #0f7c41;
+}
+
+.timerDot {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #01010133;
+}
+
+.timerLabels {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 9.75px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #010101;
+}
