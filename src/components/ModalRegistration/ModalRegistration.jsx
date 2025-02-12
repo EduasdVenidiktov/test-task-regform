@@ -6,6 +6,7 @@ import logo from "../../assets/icons/logo.svg";
 import flag from "../../assets/icons/flag.svg";
 import checkpoint from "../../assets/icons/checkpoint.svg";
 import { IoMdClose } from "react-icons/io";
+import axios from "axios";
 
 export const ModalRegistration = ({ closeModal }) => {
   const {
@@ -14,16 +15,16 @@ export const ModalRegistration = ({ closeModal }) => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    try {
+      await axios.post("https://jsonplaceholder.typicode.com/posts", data);
+    } catch (error) {
+      console.error("Помилка:", error.message);
+    }
   };
 
   return (
     <div className={css.modalContainer}>
-      {/* <button onClick={openModal} className={css.formBtnSubmit}>
-            (Відкрити модальне вікно.) Зареєструватися
-          </button> */}
-
       <div className={css.headerModal}>
         <img src={logo} alt="logo icon" className={css.logo} />
         <button

@@ -1,43 +1,9 @@
 .registerContainerInner {
-  /* padding: 29px 32px 0; */
   display: flex;
   gap: 62px;
   align-items: center;
   margin: 0 auto;
 }
-
-.registerLeftBox {
-  /* max-width: 360px; */
-}
-
-.registerLogoIcon {
-  /* margin-bottom: 45px; */
-}
-
-.registerImage {
-  /* margin-bottom: 12px; */
-}
-
-.registerImageStart {
-  /* margin-bottom: 24px; */
-}
-
-/* .registerTitle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-  letter-spacing: 0%;
-  color: #010101;
-  margin-bottom: 24px;
-} */
-
-/* .registerText {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  color: #010101;
-} */
 
 .registerContainer {
   display: flex;
@@ -121,7 +87,7 @@
   .registerContainer {
     width: 768px;
     height: 680px;
-    background: url(../../../public/bg.png);
+    background: url(../../assets/bg.png);
     padding: 29px 32px 81px;
     background-size: contain;
     background-position: center;
@@ -146,7 +112,6 @@
 
   .registerTitle {
     width: 336px;
-    /* height: 176px; */
     font-family: Montserrat;
     font-weight: 700;
     font-size: 36px;
@@ -166,7 +131,6 @@
   }
 
   .registerLeftBox {
-    /* margin-right: 32px; */
     width: 336px;
   }
 }

@@ -108,6 +108,10 @@
   cursor: pointer;
 }
 
+.formBtnSubmit:hover {
+  background-color: #14a357;
+}
+
 .formErrorMessage {
   margin-bottom: 6px;
   color: red;

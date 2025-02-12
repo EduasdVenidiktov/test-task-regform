@@ -1,6 +1,5 @@
 import css from "./RegistrationPage.module.css";
 
-// import { ModalForm } from "../../components/ModalForm/ModalForm";
 import logo from "../../assets/icons/logo.svg";
 import webinar from "../../assets/icons/webinar.svg";
 import start from "../../assets/icons/start.svg";
