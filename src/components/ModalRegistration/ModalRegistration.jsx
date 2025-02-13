@@ -13,6 +13,7 @@ export const ModalRegistration = ({ closeModal }) => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -23,6 +24,7 @@ export const ModalRegistration = ({ closeModal }) => {
         className: "toastSuccess",
         duration: 1500,
       });
+      reset();
     } catch {
       toast.error("Спробуй ще раз!", {
         className: "toastError",
