@@ -7,6 +7,7 @@ import flag from "../../assets/icons/flag.svg";
 import checkpoint from "../../assets/icons/checkpoint.svg";
 import { IoMdClose } from "react-icons/io";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 export const ModalRegistration = ({ closeModal }) => {
   const {
@@ -18,8 +19,15 @@ export const ModalRegistration = ({ closeModal }) => {
   const onSubmit = async (data) => {
     try {
       await axios.post("https://jsonplaceholder.typicode.com/posts", data);
-    } catch (error) {
-      console.error("Помилка:", error.message);
+      toast.success("Вітаємо! Ти зареєструвався!", {
+        className: "toastSuccess",
+        duration: 1500,
+      });
+    } catch {
+      toast.error("Спробуй ще раз!", {
+        className: "toastError",
+        duration: 1500,
+      });
     }
   };
 
